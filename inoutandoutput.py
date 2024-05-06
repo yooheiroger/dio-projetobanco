@@ -1,0 +1,5 @@
+nome = input ("digite seu nome: ")
+idade = input ("digite sua idade")
+print (nome)
+print (idade)
+print (nome, idade , end="...\n")
