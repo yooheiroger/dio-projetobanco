@@ -6,19 +6,19 @@ LIMETE_SAQUE = 3
 
 menu = """
 
-    [1] Sacar
-    [2] Depositar
-    [3] Extrato
-    [0] Sair
+    [a] Sacar
+    [b] Depositar
+    [c] Extrato
+    [d] Sair
 
 """
 
-print("Escolha uma opção: ", menu)
+print("Escolha uma opção: ")
 
 while True:
     opcao=input(menu)
 
-    if opcao == 2:
+    if opcao == "b":
         deposito = float(input("Digite o valor a ser depositado: "))
         
         if deposito > 0:
@@ -30,7 +30,7 @@ while True:
 
     
     
-    elif opcao == 1:
+    elif opcao == "a":
         
         valor_saque = float(input("Digite um valor: ")) 
         if valor_saque > limite_saque:
@@ -45,14 +45,14 @@ while True:
             numero_saque += 1
             print ("Seu saque foi de: ", valor_saque)      
     
-    elif opcao == 3:
+    elif opcao == "c":
         print("seu extrato bancario")
         print("******Extrato******")
         print("valor depositado: ", deposito)
         print ("Valor sacado: ", valor_saque)
         print("R$ ",extrato)
 
-    elif opcao == 0:
+    elif opcao == "d":
         print ("Finalizando seção, obrigado por utilizar nosso banco")
         break
     else:
