@@ -14,4 +14,4 @@ print ("nome: {nome} idade: {idade} nome: {nome} {nome}".format(idade=idade, nom
 print ("nome: {nome} idade: {idade}".format(**dados))
 
 print (f"nome: {nome} idade: {idade}" )# o f serve para indicar que essa string tem suas variaveis ja definidas la no comeco e voce pode colocar so as variaveis
-print (f"nome: {nome} idade: {idade} saldo: {saldo:.2f}")
+print (f"nome: {nome} idade: {idade} saldo: {saldo:.2f}")#o f no final é para dizer o numero de casas que voce quer pos virgula 
